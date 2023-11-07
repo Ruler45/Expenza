@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+TAS+Beginner&family=Macondo&family=Work+Sans:wght@600&display=swap');
+.expense-tracker {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #162932;
+  gap:40px;
+  font-family: 'Edu TAS Beginner', cursive;
+  font-weight: 600;
+  
+}
+.container{
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap:40px;
+}
+.stats{
+  display: flex;
+  width:60vw;
+  justify-content: space-evenly;
+}
+.expense-tracker h1 {
+  color:#0495dd;
+  font-family: 'Macondo', cursive;
+}
+.expense-tracker button {
+  margin-left: 10px;
+}
+.profile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.profile-photo {
+  width: 200px;
+  border-radius: 50%;
+}
+
+.sign-out-button {
+  border: none;
+  width: 150px;
+  background: #3498db;
+  background-image: linear-gradient(to bottom, #3498db, #2980b9);
+  border-radius: 10px;
+  color: #ffffff;
+  font-size: 22px;
+  font-weight: bold;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+}
+
+.sign-out-button:hover {
+  background: #3cb0fd;
+  background-image: linear-gradient(to bottom, #3cb0fd, #3498db);
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.transactions {
+  padding-left: 10px;
+  width: 25rem;
+  height: 19rem;
+  overflow: auto;
+  border: 2px solid #023047;
+  border-radius: 10px;
+  margin: 20px;
+}
+.add-transaction{
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap:20px;
+}
+.transaction-box{
+  display: flex;
+  width: 90%;
+  justify-content: space-evenly;
+}
+h4{
+  font-size: 20px;
+}
+p{
+  font-size: 16px;
+}
+
+@media only screen and (max-width: 600px) {
+  .transaction-box{
+    flex-direction: column;
+  }
+  .stats{
+    flex-direction: column;
+  }
+}
